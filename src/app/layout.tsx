@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://inflation-calculator-tool.vercel.app'),
-  title: 'Inflation Calculator – Calculate Purchasing Power Over Time',
+  title: 'Inflation Calculator ??Calculate Purchasing Power Over Time',
   description:
     'Calculate how inflation affects purchasing power over time. See what your money was worth in the past or will be worth in the future with our accurate CPI-based inflation calculator.',
   keywords:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://inflation-calculator-tool.vercel.app',
     siteName: 'Inflation Calculator',
-    title: 'Inflation Calculator – Calculate Purchasing Power Over Time',
+    title: 'Inflation Calculator ??Calculate Purchasing Power Over Time',
     description:
       'Calculate how inflation affects purchasing power over time. Accurate CPI-based calculations.',
   },
@@ -41,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="hsjncRi9cl3tz3Otd6SJKurSt_V1bZ0AKO-bdWIGeHM" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script
           async
