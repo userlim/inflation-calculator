@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://inflation-calculator-tool.vercel.app'),
+  metadataBase: new URL('https://inflation-rate-calculator.vercel.app'),
   title: 'Inflation Calculator ??Calculate Purchasing Power Over Time',
   description:
     'Calculate how inflation affects purchasing power over time. See what your money was worth in the past or will be worth in the future with our accurate CPI-based inflation calculator.',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://inflation-calculator-tool.vercel.app',
+    url: 'https://inflation-rate-calculator.vercel.app',
     siteName: 'Inflation Calculator',
     title: 'Inflation Calculator ??Calculate Purchasing Power Over Time',
     description:

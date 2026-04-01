@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://inflation-calculator-tool.vercel.app/sitemap.xml',
+    sitemap: 'https://inflation-rate-calculator.vercel.app/sitemap.xml',
   };
 }
