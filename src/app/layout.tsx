@@ -44,11 +44,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="hsjncRi9cl3tz3Otd6SJKurSt_V1bZ0AKO-bdWIGeHM" />
         <meta name="google-adsense-account" content="ca-pub-4361110443201092" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
-          crossOrigin="anonymous"
-        ></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4361110443201092" crossOrigin="anonymous"></script>
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-P08T3SZDQH`}
