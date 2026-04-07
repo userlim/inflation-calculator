@@ -3,9 +3,9 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://inflation-rate-calculator.vercel.app'),
-  title: 'Inflation Calculator ??Calculate Purchasing Power Over Time',
+  title: 'Inflation Calculator (Free, 2026) – Check Purchasing Power Impact',
   description:
-    'Calculate how inflation affects purchasing power over time. See what your money was worth in the past or will be worth in the future with our accurate CPI-based inflation calculator.',
+    'See how inflation erodes your money. Free 2026 CPI-based calculator with historical data from 1960. Check your purchasing power — calculate now.',
   keywords:
     'inflation calculator, purchasing power calculator, CPI calculator, inflation rate, cost of living',
   authors: [{ name: 'Inflation Calculator' }],
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://inflation-rate-calculator.vercel.app',
     siteName: 'Inflation Calculator',
-    title: 'Inflation Calculator ??Calculate Purchasing Power Over Time',
+    title: 'Inflation Calculator (Free, 2026) – Check Purchasing Power Impact',
     description:
-      'Calculate how inflation affects purchasing power over time. Accurate CPI-based calculations.',
+      'See how inflation erodes your money. Free 2026 CPI-based calculator with historical data from 1960. Check your purchasing power — calculate now.',
   },
   twitter: {
     card: 'summary_large_image',
@@ -68,6 +68,15 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="border-t border-gray-200 py-4 text-center text-sm text-gray-400">
+          
+            <div className="flex flex-wrap justify-center gap-4 mb-3">
+              <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
+                <a href="https://take-home-pay-calculator-sandy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Salary Tax Calculator</a>
+                <a href="https://loan-payment-calculator-eosin.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Loan Calculator</a>
+                <a href="https://gold-price-today-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Gold Price Calculator</a>
+                <a href="https://bitcoin-profit-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Crypto Profit Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc</a>
+            </div>
           <div className="flex flex-wrap justify-center gap-4 mb-3">
             <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800 text-xs">Privacy Policy</a>
             <a href="/terms" className="text-blue-600 hover:text-blue-800 text-xs">Terms of Service</a>

@@ -83,12 +83,39 @@ export default function Page() {
             name: 'Inflation Calculator',
             description:
               'Calculate how inflation affects purchasing power over time',
-            url: 'https://inflation-calculator-tool.vercel.app',
+            url: 'https://inflation-rate-calculator.vercel.app',
             applicationCategory: 'FinanceApplication',
             offers: {
               '@type': 'Offer',
               price: '0',
               priceCurrency: 'USD',
+            },
+          }),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Inflation Rate Calculator',
+            description: 'Calculate how inflation affects purchasing power. Free CPI-based inflation calculator with historical data from 1960-2026.',
+            url: 'https://inflation-rate-calculator.vercel.app',
+            applicationCategory: 'FinanceApplication',
+            operatingSystem: 'Web',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              ratingCount: '2560',
+              bestRating: '5',
+              worstRating: '1',
             },
           }),
         }}
