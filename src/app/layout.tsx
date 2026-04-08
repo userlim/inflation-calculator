@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://inflation-rate-calculator.vercel.app'),
@@ -50,7 +51,7 @@ export default function RootLayout({
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-P04TH8XJJ9`}
         ></script>
-        <script
+        <Script id="gtag-init" strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
