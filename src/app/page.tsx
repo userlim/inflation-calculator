@@ -2,9 +2,8 @@ import { Metadata } from 'next';
 import Calculator from './calculator';
 
 export const metadata: Metadata = {
-  title: 'Inflation Calculator - Calculate Purchasing Power Impact',
-  description:
-    'Calculate how inflation affects your money\'s purchasing power over time. Free CPI-based inflation calculator with detailed analysis and historical data from 1960-2026.',
+  title: 'Free Inflation Calculator (2026) – CPI Purchasing Power by Year',
+  description: 'Calculate inflation-adjusted dollars between any years using official CPI data. See how purchasing power changes over time. Free, instant, no signup needed.'s purchasing power over time. Free CPI-based inflation calculator with detailed analysis and historical data from 1960-2026.',
   keywords: [
     'inflation calculator',
     'purchasing power calculator',
