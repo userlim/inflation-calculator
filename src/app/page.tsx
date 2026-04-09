@@ -265,6 +265,32 @@ export default function Page() {
           </p>
         </footer>
       </div>
+
+      {/* Extended Content Section for SEO depth */}
+      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
+        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
+        
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">What Is Inflation and Why Does It Matter?</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Inflation is the rate at which the general level of prices for goods and services rises over time, reducing purchasing power. When inflation is 3%, something that costs $100 today would cost $103 a year from now. Over longer periods, the effect compounds dramatically — $100 in 1970 has the purchasing power of roughly $800 in 2026. Understanding inflation is essential for financial planning, salary negotiations, investment decisions, and historical price comparisons.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">How the Consumer Price Index (CPI) Works</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The CPI is the most widely used measure of inflation in the United States, calculated monthly by the Bureau of Labor Statistics (BLS). It tracks the average price change over time for a basket of approximately 80,000 goods and services across 200 categories including housing (33% weight), food (14%), transportation (16%), medical care (7%), and education (7%). Our calculator uses CPI-U (All Urban Consumers) data, which covers about 93% of the US population.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Types of Inflation and Their Causes</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Economists identify several types of inflation. <strong>Demand-pull inflation</strong> occurs when demand exceeds supply, often during economic booms. <strong>Cost-push inflation</strong> results from rising production costs (raw materials, wages) passed to consumers. <strong>Built-in inflation</strong> stems from the wage-price spiral, where workers demand higher wages to keep up with prices, causing businesses to raise prices further. <strong>Monetary inflation</strong> occurs when central banks increase the money supply faster than economic growth.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Historical US Inflation: Key Periods</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The US has experienced several notable inflationary periods. The post-WWII era (1946-1948) saw inflation peak at 19.7% as wartime price controls ended. The Great Inflation (1965-1982) was driven by oil shocks and expansionary monetary policy, peaking at 14.8% in 1980. The 2021-2023 period saw inflation reach 9.1% (June 2022), driven by pandemic stimulus, supply chain disruptions, and energy price shocks. The Federal Reserve's aggressive rate hikes subsequently brought inflation back toward the 2% target.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Using Inflation Data for Financial Planning</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Inflation data is crucial for several financial decisions. For retirement planning, assuming 2-3% annual inflation helps estimate future living costs. In salary negotiations, knowing that real wages (adjusted for inflation) have grown only about 0.5% annually helps contextualize raise requests. For investors, the real rate of return (nominal return minus inflation) determines actual wealth growth. Our calculator makes these historical and projected calculations simple and instant.` }} />
+            </div>
+      </section>
     </>
   );
 }
