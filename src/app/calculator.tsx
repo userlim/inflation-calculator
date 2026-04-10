@@ -448,7 +448,7 @@ export default function Calculator() {
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-3">
         {t.title}
       </h1>
-      <p className="text-center text-gray-600 mb-12">{t.description}</p>
+      <p className="text-center text-gray-400 mb-12">{t.description}</p>
 
       {/* Input Section */}
       <div className="card mb-8">
@@ -521,8 +521,8 @@ export default function Calculator() {
           <div className="card">
             <h2 className="text-2xl font-bold mb-6">{t.results}</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="text-center p-4 bg-purple-50 rounded-xl">
-                <p className="text-sm text-gray-600 mb-2">{t.adjustedAmount}</p>
+              <div className="text-center p-4 bg-purple-500/10 rounded-xl">
+                <p className="text-sm text-gray-400 mb-2">{t.adjustedAmount}</p>
                 <p className="text-3xl font-bold text-purple-600">
                   ${results.adjusted.toLocaleString('en-US', {
                     minimumFractionDigits: 2,
@@ -531,8 +531,8 @@ export default function Calculator() {
                 </p>
               </div>
 
-              <div className="text-center p-4 bg-blue-50 rounded-xl">
-                <p className="text-sm text-gray-600 mb-2">
+              <div className="text-center p-4 bg-blue-500/10 rounded-xl">
+                <p className="text-sm text-gray-400 mb-2">
                   {t.purchasingPowerChange}
                 </p>
                 <p className="text-3xl font-bold text-blue-600">
@@ -541,14 +541,14 @@ export default function Calculator() {
               </div>
 
               <div className="text-center p-4 bg-amber-50 rounded-xl">
-                <p className="text-sm text-gray-600 mb-2">{t.averageInflation}</p>
+                <p className="text-sm text-gray-400 mb-2">{t.averageInflation}</p>
                 <p className="text-3xl font-bold text-amber-600">
                   {results.averageInflation}%
                 </p>
               </div>
 
-              <div className="text-center p-4 bg-red-50 rounded-xl">
-                <p className="text-sm text-gray-600 mb-2">
+              <div className="text-center p-4 bg-red-500/10 rounded-xl">
+                <p className="text-sm text-gray-400 mb-2">
                   {t.cumulativeInflation}
                 </p>
                 <p className="text-3xl font-bold text-red-600">
@@ -561,7 +561,7 @@ export default function Calculator() {
           {/* Comparison Section */}
           <div className="card">
             <h3 className="text-xl font-bold mb-4">{t.comparison}</h3>
-            <div className="p-4 bg-purple-50 rounded-xl">
+            <div className="p-4 bg-purple-500/10 rounded-xl">
               <p className="text-center mb-2">
                 <span className="font-semibold">${state.initialAmount}</span>{' '}
                 {t.in} {state.startYear}
@@ -588,7 +588,7 @@ export default function Calculator() {
                 style={{ width: `${Math.min(results.powerLoss, 100)}%` }}
               />
             </div>
-            <p className="text-center mt-3 text-gray-700">
+            <p className="text-center mt-3 text-gray-300">
               {results.powerLoss}% {t.lost}
             </p>
           </div>
