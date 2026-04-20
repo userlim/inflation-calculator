@@ -3,16 +3,7 @@ import Calculator from './calculator';
 
 export const metadata: Metadata = {
   title: 'Free Inflation Calculator (2026) – CPI Purchasing Power by Year',
-  description: 'Calculate inflation-adjusted dollars between any years using official CPI data. See how purchasing power changes over time. Free, instant, no signup needed.'s purchasing power over time. Free CPI-based inflation calculator with detailed analysis and historical data from 1960-2026.',
-  keywords: [
-    'inflation calculator',
-    'purchasing power calculator',
-    'CPI calculator',
-    'inflation rate',
-    'cost of living calculator',
-    'money value over time',
-    'historical inflation',
-  ],
+  description: 'Calculate inflation-adjusted dollars between any years using official CPI data. See how purchasing power changes over time. Free, instant, no signup needed.',
   alternates: {
     canonical: 'https://inflation-calculator-tool.vercel.app',
   },
@@ -148,7 +139,7 @@ export default function Page() {
                   </span>
                   {item.question}
                 </summary>
-                <p className="mt-4 text-gray-300 leading-relaxed">
+                <p className="mt-4 text-[var(--text-muted)] leading-relaxed">
                   {item.answer}
                 </p>
               </details>
@@ -162,14 +153,14 @@ export default function Page() {
             <h3 className="text-2xl font-bold mb-4 text-purple-600">
               Understanding Inflation and Purchasing Power
             </h3>
-            <p className="text-gray-300 leading-relaxed mb-4">
+            <p className="text-[var(--text-muted)] leading-relaxed mb-4">
               Inflation is a fundamental economic concept that affects everyone's
               finances. When the general level of prices for goods and services rises
               over time, the purchasing power of money decreases. This means that with
               the same amount of money, you can buy fewer items today than you could
               in the past.
             </p>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-[var(--text-muted)] leading-relaxed">
               Our inflation calculator uses historical Consumer Price Index (CPI) data
               to help you understand the real impact of inflation on your finances. By
               calculating what your money was worth at different points in time, you
@@ -182,7 +173,7 @@ export default function Page() {
             <h3 className="text-2xl font-bold mb-4 text-purple-600">
               How to Use This Calculator
             </h3>
-            <ol className="space-y-3 text-gray-300">
+            <ol className="space-y-3 text-[var(--text-muted)]">
               <li className="flex gap-3">
                 <span className="font-bold text-purple-600 flex-shrink-0">1.</span>
                 <span>
@@ -211,7 +202,7 @@ export default function Page() {
             <h3 className="text-2xl font-bold mb-4 text-purple-600">
               Why Inflation Matters for Your Finances
             </h3>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-[var(--text-muted)]">
               <div>
                 <h4 className="font-semibold text-purple-600 mb-2">
                   Retirement Planning
@@ -246,7 +237,7 @@ export default function Page() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t border-white/10 mt-16 py-8 text-center text-sm text-gray-400">
+        <footer className="border-t border-white/10 mt-16 py-8 text-center text-sm text-[var(--text-muted)]">
           <p className="mb-2">
             Data sources: U.S. Bureau of Labor Statistics (BLS) - Consumer Price
             Index (CPI)
@@ -267,47 +258,43 @@ export default function Page() {
       </div>
 
       {/* Extended Content Section for SEO depth */}
-      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
+      <section id="content-depth-section" className="mt-20 max-w-3xl mx-auto px-6 relative z-[1]">
+        <h2 className="text-h2 mb-6 text-[var(--text-primary)]">Complete Guide</h2>
         
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">What Is Inflation and Why Does It Matter?</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Inflation is the rate at which the general level of prices for goods and services rises over time, reducing purchasing power. When inflation is 3%, something that costs $100 today would cost $103 a year from now. Over longer periods, the effect compounds dramatically — $100 in 1970 has the purchasing power of roughly $800 in 2026. Understanding inflation is essential for financial planning, salary negotiations, investment decisions, and historical price comparisons.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">What Is Inflation and Why Does It Matter?</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Inflation is the rate at which the general level of prices for goods and services rises over time, reducing purchasing power. When inflation is 3%, something that costs $100 today would cost $103 a year from now. Over longer periods, the effect compounds dramatically — $100 in 1970 has the purchasing power of roughly $800 in 2026. Understanding inflation is essential for financial planning, salary negotiations, investment decisions, and historical price comparisons.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">How the Consumer Price Index (CPI) Works</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The CPI is the most widely used measure of inflation in the United States, calculated monthly by the Bureau of Labor Statistics (BLS). It tracks the average price change over time for a basket of approximately 80,000 goods and services across 200 categories including housing (33% weight), food (14%), transportation (16%), medical care (7%), and education (7%). Our calculator uses CPI-U (All Urban Consumers) data, which covers about 93% of the US population.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">How the Consumer Price Index (CPI) Works</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The CPI is the most widely used measure of inflation in the United States, calculated monthly by the Bureau of Labor Statistics (BLS). It tracks the average price change over time for a basket of approximately 80,000 goods and services across 200 categories including housing (33% weight), food (14%), transportation (16%), medical care (7%), and education (7%). Our calculator uses CPI-U (All Urban Consumers) data, which covers about 93% of the US population.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Types of Inflation and Their Causes</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Economists identify several types of inflation. <strong>Demand-pull inflation</strong> occurs when demand exceeds supply, often during economic booms. <strong>Cost-push inflation</strong> results from rising production costs (raw materials, wages) passed to consumers. <strong>Built-in inflation</strong> stems from the wage-price spiral, where workers demand higher wages to keep up with prices, causing businesses to raise prices further. <strong>Monetary inflation</strong> occurs when central banks increase the money supply faster than economic growth.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Types of Inflation and Their Causes</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Economists identify several types of inflation. <strong>Demand-pull inflation</strong> occurs when demand exceeds supply, often during economic booms. <strong>Cost-push inflation</strong> results from rising production costs (raw materials, wages) passed to consumers. <strong>Built-in inflation</strong> stems from the wage-price spiral, where workers demand higher wages to keep up with prices, causing businesses to raise prices further. <strong>Monetary inflation</strong> occurs when central banks increase the money supply faster than economic growth.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Historical US Inflation: Key Periods</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The US has experienced several notable inflationary periods. The post-WWII era (1946-1948) saw inflation peak at 19.7% as wartime price controls ended. The Great Inflation (1965-1982) was driven by oil shocks and expansionary monetary policy, peaking at 14.8% in 1980. The 2021-2023 period saw inflation reach 9.1% (June 2022), driven by pandemic stimulus, supply chain disruptions, and energy price shocks. The Federal Reserve's aggressive rate hikes subsequently brought inflation back toward the 2% target.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Historical US Inflation: Key Periods</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The US has experienced several notable inflationary periods. The post-WWII era (1946-1948) saw inflation peak at 19.7% as wartime price controls ended. The Great Inflation (1965-1982) was driven by oil shocks and expansionary monetary policy, peaking at 14.8% in 1980. The 2021-2023 period saw inflation reach 9.1% (June 2022), driven by pandemic stimulus, supply chain disruptions, and energy price shocks. The Federal Reserve's aggressive rate hikes subsequently brought inflation back toward the 2% target.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Using Inflation Data for Financial Planning</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Inflation data is crucial for several financial decisions. For retirement planning, assuming 2-3% annual inflation helps estimate future living costs. In salary negotiations, knowing that real wages (adjusted for inflation) have grown only about 0.5% annually helps contextualize raise requests. For investors, the real rate of return (nominal return minus inflation) determines actual wealth growth. Our calculator makes these historical and projected calculations simple and instant.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Using Inflation Data for Financial Planning</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Inflation data is crucial for several financial decisions. For retirement planning, assuming 2-3% annual inflation helps estimate future living costs. In salary negotiations, knowing that real wages (adjusted for inflation) have grown only about 0.5% annually helps contextualize raise requests. For investors, the real rate of return (nominal return minus inflation) determines actual wealth growth. Our calculator makes these historical and projected calculations simple and instant.` }} />
             </div>
       </section>
     
       {/* Keyword-Optimized Content */}
-      <section id="keyword-seo-section" className="mt-8 max-w-3xl mx-auto px-4">
-        <p className="text-sm text-gray-400 leading-relaxed">
+      <section id="keyword-seo-section" className="mt-12 max-w-3xl mx-auto px-6 pb-16 relative z-[1]">
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">
           Calculate how inflation affects your money over time. Our free inflation rate calculator uses official CPI data to show purchasing power changes. Perfect as a cost of living calculator, salary inflation tool, and buying power calculator. Track US inflation rates historically.
         </p>
 <div className="mt-3 flex flex-wrap gap-2">
-          <a href="https://take-home-pay-calculator-sandy.vercel.app" className="text-xs text-blue-400 hover:underline">Salary Tax Calculator →</a>
-          <a href="https://loan-payment-calculator-eosin.vercel.app" className="text-xs text-blue-400 hover:underline">Loan Calculator →</a>
-          <a href="https://gold-price-today-calculator.vercel.app" className="text-xs text-blue-400 hover:underline">Gold Price Calculator →</a>
+          <a href="https://take-home-pay-calculator-sandy.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Salary Tax Calculator →</a>
+          <a href="https://loan-payment-calculator-eosin.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Loan Calculator →</a>
+          <a href="https://gold-price-today-calculator.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Gold Price Calculator →</a>
         </div>
 
       </section>
       </>
   );
-  other: {
-    'article:published_time': '2025-01-15T00:00:00Z',
-    'article:modified_time': '2026-04-10T00:00:00Z',
-  },
 }
