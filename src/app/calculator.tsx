@@ -448,7 +448,7 @@ export default function Calculator() {
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-3">
         {t.title}
       </h1>
-      <p className="text-center text-[var(--text-muted)] mb-12">{t.description}</p>
+      <p className="text-center text-[#8B95A1] mb-12">{t.description}</p>
 
       {/* Input Section */}
       <div className="card mb-8">
@@ -522,7 +522,7 @@ export default function Calculator() {
             <h2 className="text-2xl font-bold mb-6">{t.results}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="text-center p-4 bg-[rgba(var(--accent-rgb),0.08)] rounded-xl">
-                <p className="text-sm text-[var(--text-muted)] mb-2">{t.adjustedAmount}</p>
+                <p className="text-sm text-[#8B95A1] mb-2">{t.adjustedAmount}</p>
                 <p className="text-3xl font-bold text-purple-600">
                   ${results.adjusted.toLocaleString('en-US', {
                     minimumFractionDigits: 2,
@@ -532,7 +532,7 @@ export default function Calculator() {
               </div>
 
               <div className="text-center p-4 bg-blue-500/10 rounded-xl">
-                <p className="text-sm text-[var(--text-muted)] mb-2">
+                <p className="text-sm text-[#8B95A1] mb-2">
                   {t.purchasingPowerChange}
                 </p>
                 <p className="text-3xl font-bold text-blue-600">
@@ -541,14 +541,14 @@ export default function Calculator() {
               </div>
 
               <div className="text-center p-4 bg-amber-50 rounded-xl">
-                <p className="text-sm text-[var(--text-muted)] mb-2">{t.averageInflation}</p>
+                <p className="text-sm text-[#8B95A1] mb-2">{t.averageInflation}</p>
                 <p className="text-3xl font-bold text-amber-600">
                   {results.averageInflation}%
                 </p>
               </div>
 
               <div className="text-center p-4 bg-red-500/10 rounded-xl">
-                <p className="text-sm text-[var(--text-muted)] mb-2">
+                <p className="text-sm text-[#8B95A1] mb-2">
                   {t.cumulativeInflation}
                 </p>
                 <p className="text-3xl font-bold text-red-600">
@@ -582,13 +582,13 @@ export default function Calculator() {
           {/* Visual Bar */}
           <div className="card">
             <h3 className="text-lg font-bold mb-4">{t.lost}</h3>
-            <div className="w-full bg-[rgba(255,255,255,0.04)] rounded-full h-8 overflow-hidden">
+            <div className="w-full bg-[#F7F8FA] rounded-full h-8 overflow-hidden">
               <div
                 className="bg-gradient-to-r from-red-400 to-red-600 h-full transition-all duration-500"
                 style={{ width: `${Math.min(results.powerLoss, 100)}%` }}
               />
             </div>
-            <p className="text-center mt-3 text-[var(--text-muted)]">
+            <p className="text-center mt-3 text-[#8B95A1]">
               {results.powerLoss}% {t.lost}
             </p>
           </div>
@@ -596,7 +596,7 @@ export default function Calculator() {
       )}
 
       {/* Footer */}
-      <div className="mt-12 text-center text-sm text-[var(--text-secondary)]">
+      <div className="mt-12 text-center text-sm text-[#4E5968]">
         <p>
           Data sources: U.S. Bureau of Labor Statistics (BLS) CPI Historical
           Data
